@@ -239,10 +239,12 @@ end
 globalkeys = gears.table.join(
     -- brightness
     awful.key({ modkey,           }, "F1",      brightness_down,
-              {description="show help", group="awesome"}),
+              {description="Brightness down", group="user"}),
     awful.key({ modkey,           }, "F2",      brightness_up,
-              {description="show help", group="awesome"}),
+              {description="Brightness up", group="user"}),
 
+    awful.key({                   }, "Print",   function() awful.util.spawn("flameshot gui") end,
+              {description="show help", group="user"}),
     -- help
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
