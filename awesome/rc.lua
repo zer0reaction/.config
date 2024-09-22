@@ -218,29 +218,28 @@ root.buttons(gears.table.join(
 -- }}}
 
 
-local brightness = 1.0
+local brightness = 100
 
 local function brightness_up()
-    if brightness < 2.0 then
-        brightness = brightness + 0.1
-        awful.util.spawn("xrandr --output eDP-1 --brightness " .. tostring(brightness))
+    if brightness < 100 then
+        brightness = brightness + 10
+        awful.util.spawn("brightnessctl -d intel_backlight set " .. brightness .. "%")
     end
 end
 
 local function brightness_down()
-    if brightness >= 0.2 then
-        brightness = brightness - 0.1
-        awful.util.spawn("xrandr --output eDP-1 --brightness " .. tostring(brightness))
+    if brightness > 10 then
+        brightness = brightness - 10
+        awful.util.spawn("brightnessctl -d intel_backlight set " .. brightness .. "%")
     end
 end
-
 
 -- {{{ Key bindings
 globalkeys = gears.table.join(
     -- brightness
-    awful.key({ modkey,           }, "F1",      brightness_down,
+    awful.key({                   }, "XF86MonBrightnessDown",      brightness_down,
               {description="Brightness down", group="user"}),
-    awful.key({ modkey,           }, "F2",      brightness_up,
+    awful.key({                   }, "XF86MonBrightnessUp",      brightness_up,
               {description="Brightness up", group="user"}),
 
     awful.key({                   }, "Print",   function() awful.util.spawn("flameshot gui") end,
@@ -594,6 +593,5 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 awful.util.spawn("picom")
 awful.util.spawn("/home/zer0/.config/polybar/launch.sh")
 awful.util.spawn("nm-applet")
-awful.util.spawn("xrandr --output eDP-1 --brightness 1")
 awful.util.spawn("setxkbmap -option caps:escape")
 awful.util.spawn("setxkbmap -option grp:alt_shift_toggle -layout us,ru")
