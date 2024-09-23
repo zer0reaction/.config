@@ -218,19 +218,25 @@ root.buttons(gears.table.join(
 -- }}}
 
 
-local brightness = 100
+local brightness = 70
+
+local function set_brightness(brightness)
+    if brightness > 0 and brightness <= 100 then
+        awful.util.spawn("brightnessctl -d intel_backlight set " .. brightness .. "%")
+    end
+end
 
 local function brightness_up()
     if brightness < 100 then
         brightness = brightness + 10
-        awful.util.spawn("brightnessctl -d intel_backlight set " .. brightness .. "%")
+        set_brightness(brightness)
     end
 end
 
 local function brightness_down()
     if brightness > 10 then
         brightness = brightness - 10
-        awful.util.spawn("brightnessctl -d intel_backlight set " .. brightness .. "%")
+        set_brightness(brightness)
     end
 end
 
@@ -590,6 +596,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 
 -- user config
+set_brightness(brightness)
 awful.util.spawn("picom")
 awful.util.spawn("/home/zer0/.config/polybar/launch.sh")
 awful.util.spawn("nm-applet")
