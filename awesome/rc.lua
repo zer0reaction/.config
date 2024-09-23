@@ -597,7 +597,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 -- user config
 set_brightness(brightness)
-awful.util.spawn("picom --shadow-opacity 0 --fade-in-step 1 --fade-out-step 1")
+awful.util.spawn("picom --config /home/zer0/.config/picom/picom.conf")
 awful.util.spawn("/usr/bin/lxpolkit")
 awful.util.spawn("/home/zer0/.config/polybar/launch.sh")
 awful.util.spawn("nm-applet")
