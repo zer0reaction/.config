@@ -598,6 +598,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- user config
 set_brightness(brightness)
 awful.util.spawn("picom")
+awful.util.spawn("/usr/bin/lxpolkit")
 awful.util.spawn("/home/zer0/.config/polybar/launch.sh")
 awful.util.spawn("nm-applet")
 awful.util.spawn("setxkbmap -option caps:escape")
