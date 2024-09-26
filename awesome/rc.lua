@@ -595,10 +595,6 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 
--- per computer settings
--- awful.util.spawn("/home/zer0/.config/awesome/settings.sh")
-
-
 -- user config
 set_brightness(brightness)
 awful.util.spawn("picom --config /home/zer0/.config/picom/picom.conf")
