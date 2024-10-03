@@ -5,19 +5,19 @@ program = "/usr/bin/fish"
 size = 15.0
 
 [font.normal]
-family = "Hack"
+family = "HackNerdFont"
 style = "Regular"
 
 [font.bold]
-family = "Hack"
+family = "HackNerdFont"
 style = "Bold"
 
 [font.bold_italic]
-family = "Hack"
+family = "HackNerdFont"
 style = "Bold Italic"
 
 [font.italic]
-family = "Hack"
+family = "HackNerdFont"
 style = "Italic"
 
 [window]
