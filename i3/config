@@ -163,6 +163,8 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        wheel_up_cmd nop
+        wheel_down_cmd nop
 }
 
 exec --no-startup-id "/home/zer0/.config/i3/startup.sh"
