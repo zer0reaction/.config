@@ -28,7 +28,7 @@ disk /home {
 }
 
 battery 0 {
-    format = "%status %remaining"
+    format = "%status %percentage"
 }
 
 tztime local {
