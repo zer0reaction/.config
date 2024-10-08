@@ -1,0 +1,32 @@
+general {
+        output_format = "i3bar"
+        colors = true
+        interval = 1
+}
+
+order += "cpu_usage"
+order += "memory"
+order += "disk /"
+order += "battery 0"
+order += "tztime local"
+
+cpu_usage {
+    format = "CPU: %usage"
+}
+
+memory {
+    format = "RAM: %used"
+}
+
+disk / {
+    format = "ROOT: %percentage_used"
+}
+
+battery 0 {
+    format = "%status %remaining"
+}
+
+tztime local {
+    format = "%Y-%m-%d %H:%M:%S"
+    timezone = "Europe/Moscow"
+}
