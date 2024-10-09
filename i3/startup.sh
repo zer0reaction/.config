@@ -13,5 +13,4 @@ xinput set-prop $mouse_id "Coordinate Transformation Matrix" 1, 0, 0, 0, 1, 0, 0
 xinput set-prop $mouse_id "libinput Accel Profile Enabled" 0 1 0
 
 # Computer specific configurations
-xrandr --output HDMI-1 --off
 xrandr --output DP-3 --mode 1920x1080 --rate 240
