@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mouse_id=9
+mouse_id=13
 
 # Startup programs
 setxkbmap -option grp:alt_shift_toggle -option caps:escape -layout us,ru
