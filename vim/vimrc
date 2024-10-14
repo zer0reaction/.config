@@ -15,6 +15,24 @@ set updatetime=50
 set colorcolumn=80
 set signcolumn=yes
 set termguicolors
+set mouse=
+set ttymouse=
+
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+nnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+vnoremap <Up> <Nop>
+vnoremap <Down> <Nop>
+vnoremap <Left> <Nop>
+vnoremap <Right> <Nop>
+
+let mapleader=" "
+nnoremap <leader>e :Ex<Enter>
 
 syntax enable
-colorscheme slate
+colorscheme desert
