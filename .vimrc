@@ -18,3 +18,5 @@ set termguicolors
 
 syntax enable
 colorscheme slate
+
+vnoremap <Esc> <C-c>
