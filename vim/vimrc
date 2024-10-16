@@ -34,6 +34,8 @@ vnoremap <Right> <Nop>
 
 let mapleader=" "
 nnoremap <leader>e :Ex<Enter>
+nnoremap <C-l> :tabn<Enter>
+nnoremap <C-h> :tabp<Enter>
 
 syntax enable
 colorscheme desert
