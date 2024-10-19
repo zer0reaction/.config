@@ -38,4 +38,4 @@ nnoremap <C-l> :tabn<Enter>
 nnoremap <C-h> :tabp<Enter>
 
 syntax enable
-colorscheme slate
+colorscheme desert
