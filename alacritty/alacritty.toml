@@ -1,4 +1,4 @@
-[shell]
+[terminal.shell]
 program = "/usr/bin/fish"
 
 [font]
@@ -63,3 +63,5 @@ color = '#ff9e64'
 [[colors.indexed_colors]]
 index = 17
 color = '#db4b4b'
+
+[terminal]
