@@ -21,7 +21,7 @@ family = "HackNerdFont"
 style = "Italic"
 
 [window]
-opacity = 0.9
+opacity = 1
 
 # TokyoNight Alacritty Colors
 # Default colors
