@@ -1,7 +1,6 @@
 set fish_greeting ""
 
 alias rm "echo use trash or /bin/rm"
-alias clear "echo use Ctrl-l"
 alias t-p trash-put
 alias t-l trash-list
 alias t-r trash-restore
