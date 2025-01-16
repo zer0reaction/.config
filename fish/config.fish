@@ -5,7 +5,7 @@ alias t-p trash-put
 alias t-l trash-list
 alias t-r trash-restore
 alias t-e trash-empty
-alias prog "cd ~/Documents/programming"
+alias prog "cd ~/Programming"
 alias sand "cd ~/Documents/programming/sandbox"
 
 if status is-interactive
