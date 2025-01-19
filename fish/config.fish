@@ -7,6 +7,7 @@ alias t-r trash-restore
 alias t-e trash-empty
 alias prog "cd ~/Programming"
 alias sand "cd ~/Programming/sandbox"
+alias stud "cd ~/Documents/study"
 
 if status is-interactive
     # Commands to run in interactive sessions can go here
