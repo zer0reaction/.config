@@ -1,3 +1,5 @@
+cat ~/Documents/todo.md
+
 set fish_greeting ""
 
 alias rm "echo use trash or /bin/rm"
