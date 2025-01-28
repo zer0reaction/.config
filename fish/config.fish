@@ -7,8 +7,6 @@ alias t-l trash-list
 alias t-r trash-restore
 alias t-e trash-empty
 
-alias nv nvim
-
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
