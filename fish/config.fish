@@ -12,3 +12,4 @@ if status is-interactive
 end
 
 fastfetch -c /home/zer0/.config/fastfetch/config.jsonc
+echo
