@@ -10,6 +10,3 @@ alias t-e trash-empty
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
-
-fastfetch -c /home/zer0/.config/fastfetch/config.jsonc
-echo
