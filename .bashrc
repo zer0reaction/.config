@@ -21,7 +21,7 @@ prompt_command() {
     local Green='\[\e[0;32m\]'
 
     if [ $EXIT != 0 ]; then
-        PS1+="${Red}[$EXIT]${End} \W ${Red}>${End} "
+        PS1+="${Red}[${EXIT}]${End} \W ${Red}>${End} "
     else
         PS1+="\w ${Green}>${End} "
     fi
