@@ -19,10 +19,12 @@ prompt_command() {
     local Red='\[\e[0;31m\]'
     local Gre='\[\e[0;32m\]'
 
-    PS1+="\W > "
+    PS1+="\W "
 
     if [ $EXIT != 0 ]; then
-        PS1+="${Red}[${EXIT}]${End} "
+        PS1+="${Red}>${End} "
+    else
+        PS1+="${Gre}>${End} "
     fi
 
 }
