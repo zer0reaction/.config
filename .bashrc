@@ -23,7 +23,7 @@ prompt_command() {
     if [ $EXIT != 0 ]; then
         PS1+="${Red}[$EXIT]${End} \W ${Red}>${End} "
     else
-        PS1+="\W ${Green}>${End} "
+        PS1+="\w ${Green}>${End} "
     fi
 
 }
