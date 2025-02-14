@@ -5,6 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+set -o vi
+
 alias ls='ls --color=auto'
 alias ll='ls -lah --color=auto'
 alias grep='grep --color=auto'
@@ -18,14 +20,12 @@ prompt_command() {
 
     local End='\[\e[0m\]'
     local Red='\[\e[0;31m\]'
-    local Gre='\[\e[0;32m\]'
-
-    PS1+="\W "
+    local Green='\[\e[0;32m\]'
 
     if [ $EXIT != 0 ]; then
-        PS1+="${Red}>${End} "
+        PS1+="${Red}[$EXIT]${End} \W ${Red}>${End} "
     else
-        PS1+="${Gre}>${End} "
+        PS1+="\W ${Green}>${End} "
     fi
 
 }
