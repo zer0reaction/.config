@@ -27,3 +27,5 @@ prompt_command() {
     fi
 
 }
+
+export EDITOR=nvim
