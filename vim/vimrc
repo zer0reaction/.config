@@ -10,32 +10,18 @@ set history=500
 set undofile
 set nohlsearch
 set incsearch
-set scrolloff=8
+set scrolloff=5
 set updatetime=50
 set signcolumn=yes
 set termguicolors
-set mouse=
-set ttymouse=
 set showcmd
-
-nnoremap <Up> <Nop>
-nnoremap <Down> <Nop>
-nnoremap <Left> <Nop>
-nnoremap <Right> <Nop>
-inoremap <Up> <Nop>
-inoremap <Down> <Nop>
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
-vnoremap <Up> <Nop>
-vnoremap <Down> <Nop>
-vnoremap <Left> <Nop>
-vnoremap <Right> <Nop>
-tnoremap <Esc> <C-\><C-N>
 
 let mapleader=" "
 nnoremap <leader>e :Ex<Enter>
-nnoremap <C-l> :tabn<Enter>
-nnoremap <C-h> :tabp<Enter>
+nnoremap <C-j> :tabp<Enter>
+nnoremap <C-k> :tabn<Enter>
+nnoremap <C-t> :tabnew<Enter>
+inoremap <C-c> <Esc>
 
 syntax enable
-colorscheme desert
+colorscheme habamax
