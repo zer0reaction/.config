@@ -12,6 +12,7 @@ set nohlsearch
 set incsearch
 set scrolloff=5
 set updatetime=50
+set colorcolumn=120
 set signcolumn=yes
 set termguicolors
 set showcmd
