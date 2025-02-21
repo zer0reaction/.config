@@ -1,23 +1,35 @@
-set number
-set relativenumber
+set nu
+set rnu
+
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-set wrap
 set smartindent
-set history=500
+
+set wrap
+set linebreak
+
+set noswapfile
+set nobackup
 set undofile
+
+let undopath = $HOME . "/.vim/undodir"
+set undodir=undopath
+
 set nohlsearch
 set incsearch
-set scrolloff=5
-set updatetime=50
+
+set termguicolors
 set colorcolumn=120
 set signcolumn=yes
-set termguicolors
+
+set scrolloff=5
+set updatetime=50
 set showcmd
 
 let mapleader=" "
+
 nnoremap <leader>e :Ex<Enter>
 nnoremap <C-j> :tabp<Enter>
 nnoremap <C-k> :tabn<Enter>
