@@ -28,4 +28,4 @@ prompt_command() {
 
 }
 
-export EDITOR=vim
+export EDITOR=nvim
