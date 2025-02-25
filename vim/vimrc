@@ -27,6 +27,7 @@ set signcolumn=yes
 set scrolloff=5
 set updatetime=50
 set showcmd
+set autoread
 
 let mapleader=" "
 
