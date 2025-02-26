@@ -36,5 +36,3 @@ prompt_command() {
     fi
 
 }
-
-
