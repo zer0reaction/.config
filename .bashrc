@@ -10,6 +10,15 @@ alias ll='ls -lah --color=auto'
 alias grep='grep --color=auto'
 alias rm="echo 'Using rm is dangerous'"
 
+export EDITOR=nvim
+
+HISTCONTROL=ignoreboth
+shopt -s histappend
+HISTSIZE=1000
+HISTFILESIZE=2000
+shopt -s checkwinsize
+shopt -s globstar
+
 PROMPT_COMMAND=prompt_command
 
 prompt_command() {
@@ -28,4 +37,4 @@ prompt_command() {
 
 }
 
-export EDITOR=nvim
+
