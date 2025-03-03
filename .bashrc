@@ -8,7 +8,6 @@
 alias ls='ls --color=auto'
 alias ll='ls -lah --color=auto'
 alias grep='grep --color=auto'
-alias rm="echo 'Using rm is dangerous'"
 
 export EDITOR=nvim
 
