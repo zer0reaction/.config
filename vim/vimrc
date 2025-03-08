@@ -12,16 +12,17 @@ set linebreak
 
 set noswapfile
 set nobackup
-set undofile
 
-let undopath = $HOME . "/.vim/undodir"
-set undodir=undopath
+set undofile
+set undodir=~/.vim/undodir
+if !isdirectory(expand("~/.vim/undodir"))
+    call mkdir(expand("~/.vim/undodir"), "p")
+endif
 
 set nohlsearch
 set incsearch
 
 set termguicolors
-set colorcolumn=120
 set signcolumn=yes
 
 set scrolloff=5
