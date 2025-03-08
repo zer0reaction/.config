@@ -9,7 +9,8 @@ alias ls='ls --color=auto'
 alias ll='ls -lah --color=auto'
 alias grep='grep --color=auto'
 
-export EDITOR=nvim
+export EDITOR=vim
+export PATH='/home/zer0/binaryninja/':$PATH
 
 HISTCONTROL=ignoreboth
 shopt -s histappend
