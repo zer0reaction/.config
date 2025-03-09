@@ -10,7 +10,7 @@ alias ll="ls -lah --color=auto"
 alias grep="grep --color=auto"
 
 alias todo="vim ~/TODO.md"
-alias sandbox=". ~/sandbox.sh"
+alias sandbox="mkdir -p /tmp/sandbox && cd /tmp/sandbox"
 
 export EDITOR=vim
 
