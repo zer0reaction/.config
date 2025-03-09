@@ -13,6 +13,7 @@ alias todo="vim ~/TODO.md"
 alias sandbox="mkdir -p /tmp/sandbox && cd /tmp/sandbox"
 
 export EDITOR=vim
+source ~/Programming/python_venv/bin/activate
 
 HISTCONTROL=ignoreboth
 shopt -s histappend
