@@ -25,7 +25,7 @@ set incsearch
 set termguicolors
 set signcolumn=yes
 
-set scrolloff=5
+set scrolloff=8
 set updatetime=50
 set showcmd
 set autoread
