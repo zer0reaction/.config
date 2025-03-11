@@ -29,6 +29,7 @@ set scrolloff=8
 set updatetime=50
 set showcmd
 set autoread
+set timeoutlen=1000 ttimeoutlen=0
 
 let mapleader=" "
 
