@@ -39,4 +39,4 @@ nnoremap <C-t> :tabnew<Enter>
 inoremap <C-c> <Esc>
 
 syntax enable
-colorscheme quiet
+colorscheme habamax
