@@ -38,6 +38,6 @@ prompt_command() {
     PS1="[${timestamp}] \w ${Green}>${End} "
 
     if [ $EXIT != 0 ]; then
-        PS1="${Red}[${EXIT}]${End} ${PS1}"
+        PS1="${Red}[${EXIT}]${End} [${timestamp}] \w ${Red}>${End} "
     fi
 }
