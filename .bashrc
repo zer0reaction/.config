@@ -33,11 +33,10 @@ prompt_command() {
     local Red="\[\e[0;31m\]"
     local Green="\[\e[0;32m\]"
 
-    timestamp=$(date +%H:%M:%S)
 
-    PS1="[${timestamp}] \w ${Green}>${End} "
-
-    if [ $EXIT != 0 ]; then
-        PS1="${Red}[${EXIT}]${End} [${timestamp}] \w ${Red}>${End} "
+    if [ $EXIT == 0 ]; then
+        PS1="\w ${Green}>${End} "
+    else
+        PS1="\w ${Red}>${End} "
     fi
 }
