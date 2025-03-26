@@ -14,7 +14,7 @@ alias sandbox="mkdir -p /tmp/sandbox && cd /tmp/sandbox"
 alias clear-sandbox="rm -rf /tmp/sandbox/*"
 
 export EDITOR=vim
-source ~/Programming/python_venv/bin/activate
+source ~/Programming/.venv/bin/activate
 
 HISTCONTROL=ignoreboth
 shopt -s histappend
