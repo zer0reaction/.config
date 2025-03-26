@@ -37,6 +37,8 @@ nnoremap <leader>e :Ex<Enter>
 nnoremap <C-j> :tabp<Enter>
 nnoremap <C-k> :tabn<Enter>
 nnoremap <C-t> :tabnew<Enter>
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
 inoremap <C-c> <Esc>
 
 syntax enable
