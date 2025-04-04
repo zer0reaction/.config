@@ -31,6 +31,8 @@ set showcmd
 set autoread
 set timeoutlen=1000 ttimeoutlen=0
 
+set colorcolumn=81
+
 let mapleader=" "
 
 nnoremap <leader>e :Ex<Enter>
