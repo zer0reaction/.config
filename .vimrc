@@ -33,7 +33,7 @@ set timeoutlen=1000 ttimeoutlen=0
 
 set colorcolumn=81
 
-set list
+set nolist
 set listchars=space:⸱,tab:>>
 
 let mapleader=" "
@@ -47,4 +47,4 @@ nnoremap <C-u> <C-u>zz
 inoremap <C-c> <Esc>
 
 syntax enable
-colorscheme habamax
+colorscheme quiet
