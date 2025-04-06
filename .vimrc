@@ -31,10 +31,8 @@ set showcmd
 set autoread
 set timeoutlen=1000 ttimeoutlen=0
 
-set colorcolumn=81
-
-set nolist
-set listchars=space:⸱,tab:>>
+set list
+set listchars=tab:>>
 
 let mapleader=" "
 
@@ -47,4 +45,3 @@ nnoremap <C-u> <C-u>zz
 inoremap <C-c> <Esc>
 
 syntax enable
-colorscheme quiet
