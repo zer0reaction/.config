@@ -33,6 +33,9 @@ set timeoutlen=1000 ttimeoutlen=0
 
 set colorcolumn=81
 
+set list
+set listchars=space:⸱,tab:>>
+
 let mapleader=" "
 
 nnoremap <leader>e :Ex<Enter>
