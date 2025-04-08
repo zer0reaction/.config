@@ -45,3 +45,4 @@ nnoremap <C-u> <C-u>zz
 inoremap <C-c> <Esc>
 
 syntax enable
+colorscheme quiet
