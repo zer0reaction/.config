@@ -51,4 +51,4 @@ inoremap c <Esc>
 vnoremap c <Esc>
 
 syntax enable
-colorscheme quiet
+colorscheme desert
