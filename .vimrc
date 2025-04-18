@@ -53,6 +53,7 @@ nnoremap c <Esc>
 
 inoremap s <Esc>:w<Enter>
 nnoremap s <Esc>:w<Enter>
+vnoremap s <Esc>:w<Enter>
 
 syntax enable
 colorscheme desert
