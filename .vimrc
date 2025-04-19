@@ -56,4 +56,4 @@ nnoremap s <Esc>:w<Enter>
 vnoremap s <Esc>:w<Enter>
 
 syntax enable
-colorscheme desert
+colorscheme slate
