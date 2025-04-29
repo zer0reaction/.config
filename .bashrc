@@ -32,14 +32,10 @@ prompt_command() {
     local End="\[\e[0m\]"
     local Red="\[\e[0;31m\]"
     local Green="\[\e[0;32m\]"
-    local Magenta="\[\e[0;35m\]"
 
-    local Color=$Green
-
-    if [ $EXIT != 0 ]; then
-        Color=$Red
+    if [ $EXIT == 0 ]; then
+        PS1="\w ${Green}>${End} "
+    else
+        PS1="\w ${Red}>${End} "
     fi
-
-    PS1="┌─$Color[$End\t$Color]$End-$Color[$End\u@\h$Color]$End-$Color[$End\w$Color]$End\n└─ $ ";
-
 }
