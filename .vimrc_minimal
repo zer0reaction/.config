@@ -1,5 +1,8 @@
 syntax on
 
+set number
+set relativenumber
+
 set expandtab
 set tabstop=8
 set softtabstop=4
@@ -11,3 +14,6 @@ set smartindent
 set colorcolumn=80
 set autoread
 set scrolloff=3
+
+set list
+set listchars=trail:.
