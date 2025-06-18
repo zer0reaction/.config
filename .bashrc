@@ -9,7 +9,7 @@ alias ls="ls --color=auto"
 alias ll="ls -lah --color=auto"
 alias grep="grep --color=auto"
 
-alias todo="vim ~/TODO.md"
+alias idea="vim ~/Notes/misc/ideas.md"
 alias sandbox="mkdir -p /tmp/sandbox && cd /tmp/sandbox"
 alias clear-sandbox="rm -rf /tmp/sandbox/*"
 
