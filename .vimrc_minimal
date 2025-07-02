@@ -6,7 +6,7 @@ set number
 set relativenumber
 
 set expandtab
-set tabstop=8
+set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
@@ -18,4 +18,6 @@ set autoread
 set scrolloff=3
 
 set list
-set listchars=trail:.,tab:>>
+set listchars=trail:.,tab:.\ 
+
+autocmd BufEnter * if &filetype == "go" | setlocal noexpandtab
