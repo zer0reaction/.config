@@ -1,6 +1,6 @@
 syntax on
 
-colorscheme desert
+colorscheme retrobox
 
 set number
 set relativenumber
@@ -16,6 +16,7 @@ set smartindent
 set colorcolumn=80
 set autoread
 set scrolloff=3
+set cursorline
 
 set list
 set listchars=trail:.,tab:.\ 
