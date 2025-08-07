@@ -1,9 +1,5 @@
-;; Simple C mode
-(add-to-list 'load-path "~/.emacs.local/")
-(require 'simpc-mode)
-(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
-
 ;; Behaviour in files
+(setq-default c-basic-offset 4)
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 (setq-default require-final-newline t)
@@ -11,11 +7,11 @@
 ;; Emacs behaviour and appearance
 (setq-default make-backup-files nil)
 (setq-default inhibit-startup-screen t)
-(setq-default whitespace-style '(face trailing empty))
+(setq-default whitespace-style '(face trailing empty tabs))
 (setq-default mouse-wheel-progressive-speed nil)
 (global-unset-key (kbd "C-z"))
 (global-set-key (kbd "C-;") 'save-buffer)
-(add-to-list 'default-frame-alist '(font . "LucidaConsole-18"))
+(add-to-list 'default-frame-alist '(font . "Hack-18"))
 
 ;; Modes
 (tool-bar-mode 0)
