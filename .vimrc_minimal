@@ -21,4 +21,8 @@ set cursorline
 set list
 set listchars=trail:.,tab:.\ 
 
+inoremap <C-g> <Esc>
+vnoremap <C-g> <Esc>
+nnoremap <C-g> <Esc>
+
 autocmd BufEnter * if &filetype == "go" | setlocal noexpandtab
