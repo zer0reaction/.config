@@ -11,7 +11,6 @@
 (setq-default mouse-wheel-progressive-speed nil)
 (global-unset-key (kbd "C-z"))
 (global-set-key (kbd "C-;") 'save-buffer)
-(global-set-key (kbd "M-m") 'recompile)
 (add-to-list 'default-frame-alist '(font . "Hack-15"))
 
 ;; Modes
