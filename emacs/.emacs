@@ -1,8 +1,16 @@
 ;; Behaviour in files
-(setq-default c-basic-offset 4)
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
 (setq-default require-final-newline t)
+
+;; C mode
+(setq-default c-basic-offset 4)
+
+(defun my-c-mode-hook ()
+  (c-set-offset 'substatement-open 0)
+  (c-set-offset 'brace-list-open 0))
+
+(add-hook 'c-mode-hook 'my-c-mode-hook)
 
 ;; Emacs behaviour and appearance
 (setq-default make-backup-files nil)
