@@ -5,16 +5,18 @@
 # If not running interactively, don"t do anything
 [[ $- != *i* ]] && return
 
+mkdir -p "${HOME}/.local/bin"
+
 alias ls="ls --color=auto"
 alias l="ls -lh --color=auto"
 alias ll="ls -lah --color=auto"
 alias grep="grep --color=auto"
-
 alias idea="vim ~/Notes/misc/ideas.md"
 alias sandbox="mkdir -p /tmp/sandbox && cd /tmp/sandbox"
 alias clear-sandbox="rm -rf /tmp/sandbox/*"
 
-export EDITOR=vim
+export EDITOR='vim'
+export PATH="${HOME}/.local/bin:${PATH}"
 
 HISTCONTROL=ignoreboth
 shopt -s histappend
