@@ -15,7 +15,7 @@
 ;; Emacs behaviour and appearance
 (setq-default make-backup-files nil)
 (setq-default inhibit-startup-screen t)
-(setq-default whitespace-style '(face trailing empty tabs))
+(setq-default whitespace-style '(face trailing empty tabs lines))
 (setq-default mouse-wheel-progressive-speed nil)
 (global-unset-key (kbd "C-z"))
 (global-set-key (kbd "C-;") 'save-buffer)
