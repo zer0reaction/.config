@@ -1,14 +1,15 @@
 ;; Behaviour in files
 (setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
+(setq-default tab-width 8)
 (setq-default require-final-newline t)
 
 ;; C mode
-(setq-default c-basic-offset 4)
+(setq-default c-basic-offset 2)
 
 (defun my-c-mode-hook ()
-  (c-set-offset 'substatement-open 0)
-  (c-set-offset 'brace-list-open 0))
+  (c-set-offset 'substatement-open '0)
+  (c-set-offset 'case-label '+)
+  (c-set-offset 'brace-list-open '0))
 
 (add-hook 'c-mode-hook 'my-c-mode-hook)
 
