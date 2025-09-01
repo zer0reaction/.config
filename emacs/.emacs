@@ -9,6 +9,8 @@
 (defun my-c-mode-hook ()
   (c-set-offset 'substatement-open '0)
   (c-set-offset 'case-label '+)
+  (c-set-offset 'arglist-intro '+)
+  (c-set-offset 'arglist-close '0)
   (c-set-offset 'brace-list-open '0))
 
 (add-hook 'c-mode-hook 'my-c-mode-hook)
