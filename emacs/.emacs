@@ -4,7 +4,7 @@
 (setq-default require-final-newline t)
 
 ;; C mode
-(setq-default c-basic-offset 2)
+(setq-default c-basic-offset 4)
 
 (defun my-c-mode-hook ()
   (c-set-offset 'substatement-open '0)
