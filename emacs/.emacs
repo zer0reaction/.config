@@ -1,19 +1,12 @@
+;; Simple C mode
+(add-to-list 'load-path "~/.emacs.local")
+(require 'simpc-mode)
+(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
+
 ;; Behaviour in files
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 8)
 (setq-default require-final-newline t)
-
-;; C mode
-(setq-default c-basic-offset 4)
-
-(defun my-c-mode-hook ()
-  (c-set-offset 'substatement-open '0)
-  (c-set-offset 'case-label '+)
-  (c-set-offset 'arglist-intro '+)
-  (c-set-offset 'arglist-close '0)
-  (c-set-offset 'brace-list-open '0))
-
-(add-hook 'c-mode-hook 'my-c-mode-hook)
 
 ;; Emacs behaviour and appearance
 (setq-default make-backup-files nil)
