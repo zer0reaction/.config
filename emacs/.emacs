@@ -5,7 +5,7 @@
 
 ;; Behaviour in files
 (setq-default indent-tabs-mode nil)
-(setq-default tab-width 8)
+(setq-default tab-width 4)
 (setq-default require-final-newline t)
 
 ;; Emacs behaviour and appearance
