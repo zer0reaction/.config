@@ -1,11 +1,12 @@
 ;; Simple C mode
 (add-to-list 'load-path "~/.emacs.local")
 (require 'simpc-mode)
+(require 'azure-theme)
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
 ;; Behaviour in files
 (setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
+(setq-default tab-width 8)
 (setq-default require-final-newline t)
 
 ;; Emacs behaviour and appearance
@@ -29,7 +30,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(wombat))
+ '(custom-enabled-themes '(azure))
+ '(custom-safe-themes
+   '("8bc22da044fd2e10235c0793af5cdef4236bff54fc149995f439404c2d3104d3"
+     default))
  '(package-selected-packages '(go-mode magit markdown-mode rust-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
