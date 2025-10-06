@@ -18,6 +18,9 @@
 (global-set-key (kbd "C-;") 'save-buffer)
 (add-to-list 'default-frame-alist '(font . "Hack-15"))
 
+;; Dvorak specific
+(define-key key-translation-map "\C-t" "\C-x")
+
 ;; Modes
 (tool-bar-mode 0)
 (menu-bar-mode 0)
