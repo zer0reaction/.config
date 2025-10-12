@@ -22,6 +22,7 @@
 (setq-default whitespace-style '(face trailing empty tab-mark))
 (global-unset-key (kbd "C-z"))
 (add-to-list 'default-frame-alist '(font . "Iosevka-17"))
+(set-face-attribute 'fixed-pitch t :family "Iosevka Light")
 
 ;; Dvorak specific remap
 (define-key key-translation-map "\C-t" "\C-x")
