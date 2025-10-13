@@ -41,8 +41,4 @@
                         '(face trailing empty))
             ))
 
-;; Remove trailing whitespace on save
-(add-hook 'before-save-hook
-          (lambda () (delete-trailing-whitespace)))
-
 (load-file custom-file)
