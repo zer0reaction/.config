@@ -1,4 +1,3 @@
-;; Custom file annoying thing
 (setq custom-file "~/.emacs.d/custom.el")
 
 ;; Third-party packages
@@ -6,26 +5,24 @@
 (require 'simpc-mode)
 (require 'azure-theme)
 (require 'gruber-darker-theme)
-
-;; Simple C mode
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
-;; Behaviour in files
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 8)
-(setq-default require-final-newline t)
+;; Default settings
+(setq-default indent-tabs-mode nil
+              tab-width 8
+              require-final-newline t
+              make-backup-files nil
+              inhibit-startup-screen t
+              mouse-wheel-progressive-speed nil
+              whitespace-style '(face trailing empty tab-mark))
 
-;; Emacs behaviour and appearance
-(setq-default make-backup-files nil)
-(setq-default inhibit-startup-screen t)
-(setq-default mouse-wheel-progressive-speed nil)
-(setq-default whitespace-style '(face trailing empty tab-mark))
-(global-unset-key (kbd "C-z"))
+;; Fonts
 (add-to-list 'default-frame-alist '(font . "Iosevka-17"))
 (set-face-attribute 'fixed-pitch t :family "Iosevka Light")
 
-;; Dvorak specific remap
+;; Keyboard
 (define-key key-translation-map "\C-t" "\C-x")
+(global-unset-key (kbd "C-z"))
 
 ;; Modes
 (tool-bar-mode 0)
@@ -34,7 +31,7 @@
 (global-auto-revert-mode)
 (global-whitespace-mode)
 
-;; Go mode hook to remove tab highlighting
+;; Disable tab highlighting in Go mode
 (add-hook 'go-mode-hook
           (lambda ()
             (setq-local whitespace-style
