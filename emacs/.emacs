@@ -22,7 +22,7 @@
 
 ;; Keyboard
 (define-key key-translation-map "\C-t" "\C-x")
-(global-unset-key (kbd "C-z"))
+(global-set-key (kbd "C-z") 'undo)
 
 ;; Modes
 (tool-bar-mode 0)
