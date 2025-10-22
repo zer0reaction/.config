@@ -5,6 +5,7 @@
 (require 'simpc-mode)
 (require 'azure-theme)
 (require 'gruber-darker-theme)
+(require 'naysayer-theme)
 (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
 
 ;; Default settings
