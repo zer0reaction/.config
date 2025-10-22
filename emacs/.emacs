@@ -32,6 +32,11 @@
 (global-auto-revert-mode)
 (global-whitespace-mode)
 
+;; ido mode
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
+
 ;; Disable tab highlighting in Go mode
 (add-hook 'go-mode-hook
           (lambda ()
