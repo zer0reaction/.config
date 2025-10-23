@@ -22,7 +22,7 @@
 (set-face-attribute 'fixed-pitch t :family "Iosevka Light")
 
 ;; Keyboard
-(define-key key-translation-map "\C-t" "\C-x")
+(keymap-set key-translation-map "C-t" "C-x")
 (global-set-key (kbd "C-z") 'undo)
 
 ;; Modes
