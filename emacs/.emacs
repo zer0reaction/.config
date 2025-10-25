@@ -26,9 +26,10 @@
 (global-whitespace-mode)
 
 ;; ido mode
+(ido-mode 1)
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
-(ido-mode 1)
+(setq ido-auto-merge-work-directories-length -1) ;; Annoying as hell!
 
 ;; org mode
 (setq org-startup-indented 1)
@@ -36,8 +37,8 @@
 
 ;; Visual
 (setq-default whitespace-style '(face trailing empty tab-mark))
-(add-to-list 'default-frame-alist '(font . "Iosevka-18"))
-(set-face-attribute 'fixed-pitch t :family "Iosevka Light")
+(add-to-list 'default-frame-alist '(font . "Hack-16"))
+(set-face-attribute 'fixed-pitch t :family "Hack")
 (add-hook 'go-mode-hook
           (lambda ()
             (setq-local whitespace-style '(face trailing empty))
