@@ -21,6 +21,10 @@
 (menu-bar-mode 0)
 (scroll-bar-mode 0)
 
+;; Scratch buffer
+(setq initial-scratch-message "")
+(setq initial-major-mode 'fundamental-mode)
+
 ;; Global modes
 (global-auto-revert-mode)
 (global-whitespace-mode)
