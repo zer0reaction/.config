@@ -41,12 +41,14 @@
 
 ;; Visual
 (setq-default whitespace-style '(face trailing empty tab-mark))
-(add-to-list 'default-frame-alist '(font . "Hack-16"))
-(set-face-attribute 'fixed-pitch t :family "Hack")
 (add-hook 'go-mode-hook
           (lambda ()
             (setq-local whitespace-style '(face trailing empty))
             (setq-local tab-width 4)))
+
+;; Set this with customize to change easily
+;; (add-to-list 'default-frame-alist '(font . "Hack-16"))
+;; (set-face-attribute 'fixed-pitch t :family "Hack")
 
 ;; Keyboard
 (keymap-set key-translation-map "C-t" "C-x")
