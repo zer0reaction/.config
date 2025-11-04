@@ -52,7 +52,7 @@
 
 ;; Keyboard
 (keymap-set key-translation-map "C-t" "C-x")
-(global-set-key (kbd "C-z") 'undo)
+(global-unset-key (kbd "C-z"))
 
 ;; Black magic to use russian on Dvorak layout
 (require 'quail)
