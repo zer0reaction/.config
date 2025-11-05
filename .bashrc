@@ -36,8 +36,8 @@ prompt_command() {
     local Green="\[\e[0;32m\]"
 
     if [ $EXIT == 0 ]; then
-        PS1="\W ${Green}%${End} "
+        PS1="(\u) \W ${Green}%${End} "
     else
-        PS1="\W ${Red}%${End} "
+        PS1="(\u) \W ${Red}%${End} "
     fi
 }
