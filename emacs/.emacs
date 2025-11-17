@@ -2,11 +2,23 @@
 
 ;; Third-party packages
 (add-to-list 'load-path "~/.emacs.local")
-(require 'simpc-mode)
 (require 'azure-theme)
 (require 'gruber-darker-theme)
 (require 'naysayer-theme)
-(add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
+(require 'zenburn-theme)
+
+;; Simple C mode
+;; (require 'simpc-mode)
+;; (add-to-list 'auto-mode-alist '("\\.[hc]\\(pp\\)?\\'" . simpc-mode))
+
+;; C mode
+(setq-default c-basic-offset 4)
+(defun my-c-mode-hook ()
+  (c-set-offset 'substatement-open '0)
+  (c-set-offset 'arglist-intro '+)
+  (c-set-offset 'arglist-close '0)
+  (c-set-offset 'brace-list-open '0))
+(add-hook 'c-mode-hook 'my-c-mode-hook)
 
 ;; Default behaviour in files
 (setq-default indent-tabs-mode nil)
@@ -46,9 +58,7 @@
             (setq-local whitespace-style '(face trailing empty))
             (setq-local tab-width 4)))
 
-;; Set this with customize to change easily
-;; (add-to-list 'default-frame-alist '(font . "Hack-16"))
-;; (set-face-attribute 'fixed-pitch t :family "Hack")
+;; Fonts are changed with customize-face (default, fixed-pitch)
 
 ;; Keyboard
 (keymap-set key-translation-map "C-t" "C-x")
