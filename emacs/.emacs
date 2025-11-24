@@ -48,7 +48,7 @@
 (setq ido-auto-merge-work-directories-length -1) ;; Annoying as hell!
 
 ;; org mode
-(setq org-startup-indented 1)
+;; (setq org-startup-indented 1)
 (global-set-key (kbd "C-c a") #'org-agenda)
 
 ;; Visual
