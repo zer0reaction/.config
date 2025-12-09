@@ -7,11 +7,16 @@
 
 mkdir -p "${HOME}/.local/bin"
 
+if [ ! -d "${HOME}/.venv" ]; then
+    echo "Warning: venv not found"
+else
+    source "${HOME}/.venv/bin/activate"
+fi
+
 alias ls="ls --color=auto"
 alias l="ls -lh --color=auto"
 alias ll="ls -lah --color=auto"
 alias grep="grep --color=auto"
-alias idea="vim ~/Notes/misc/ideas.md"
 alias sandbox="mkdir -p /tmp/sandbox && cd /tmp/sandbox"
 alias clear-sandbox="rm -rf /tmp/sandbox/*"
 
