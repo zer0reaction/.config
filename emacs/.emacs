@@ -40,6 +40,7 @@
 ;; Global modes
 (global-auto-revert-mode)
 (global-whitespace-mode)
+(global-visual-line-mode)
 
 ;; ido mode
 (ido-mode 1)
