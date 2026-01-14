@@ -1,11 +1,33 @@
-(setq custom-file "~/.emacs.d/custom.el")
+;; Default behaviour in files
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 8)
+(setq-default require-final-newline t)
+(setq-default make-backup-files nil)
 
-;; Third-party packages
-(add-to-list 'load-path "~/.emacs.local")
-(require 'azure-theme)
-(require 'gruber-darker-theme)
-(require 'naysayer-theme)
-(require 'zenburn-theme)
+;; Remove annoying things
+(setq inhibit-startup-screen t)
+(setq mouse-wheel-progressive-speed nil)
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+(scroll-bar-mode 0)
+
+;; Visual
+(setq-default whitespace-style '(face trailing empty tab-mark))
+(add-hook 'go-mode-hook
+          (lambda ()
+            (setq-local whitespace-style '(face trailing empty))
+            (setq-local tab-width 4)))
+
+;; Fonts are changed with customize-face (default, fixed-pitch)
+
+;; Scratch buffer
+(setq initial-scratch-message "")
+(setq initial-major-mode 'fundamental-mode)
+
+;; Global modes
+(global-auto-revert-mode)
+(global-whitespace-mode)
+(global-display-line-numbers-mode)
 
 ;; Simple C mode
 ;; (require 'simpc-mode)
@@ -20,27 +42,11 @@
   (c-set-offset 'brace-list-open '0))
 (add-hook 'c-mode-hook 'my-c-mode-hook)
 
-;; Default behaviour in files
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 8)
-(setq-default require-final-newline t)
-(setq-default make-backup-files nil)
+;; evil mode
+(evil-mode 1)
 
-;; Remove annoying things
-(setq inhibit-startup-screen t)
-(setq mouse-wheel-progressive-speed nil)
-(tool-bar-mode 0)
-(menu-bar-mode 0)
-(scroll-bar-mode 0)
-
-;; Scratch buffer
-(setq initial-scratch-message "")
-(setq initial-major-mode 'fundamental-mode)
-
-;; Global modes
-(global-auto-revert-mode)
-(global-whitespace-mode)
-(global-visual-line-mode)
+;; display-line-numbers mode
+(setq display-line-numbers-type 'relative)
 
 ;; ido mode
 (ido-mode 1)
@@ -53,15 +59,6 @@
 (setq org-log-repeat nil)
 (setq org-log-redeploy-last-repeat nil)
 (global-set-key (kbd "C-c a") #'org-agenda)
-
-;; Visual
-(setq-default whitespace-style '(face trailing empty tab-mark))
-(add-hook 'go-mode-hook
-          (lambda ()
-            (setq-local whitespace-style '(face trailing empty))
-            (setq-local tab-width 4)))
-
-;; Fonts are changed with customize-face (default, fixed-pitch)
 
 ;; Keyboard
 ;; (keymap-set key-translation-map "C-t" "C-x")
@@ -85,4 +82,10 @@
 ;;  ("A" ?Ф) ("O" ?Ы) ("E" ?В) ("U" ?А) ("I" ?П) ("D" ?Р) ("H" ?О) ("T" ?Л) ("N" ?Д) ("S" ?Ж) ("_" ?Э)
 ;;  (":" ?Я) ("Q" ?Ч) ("J" ?С) ("K" ?М) ("X" ?И) ("B" ?Т) ("M" ?Ь) ("W" ?Б) ("V" ?Ю) ("Z" ?,))
 
+;; Third-party packages
+(add-to-list 'load-path "~/.emacs.local")
+(require 'gruber-darker-theme)
+
+;; Custom file
+(setq custom-file "~/.emacs.d/custom.el")
 (load-file custom-file)
