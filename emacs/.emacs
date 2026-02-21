@@ -27,7 +27,7 @@
 ;; Global modes
 (global-auto-revert-mode)
 (global-whitespace-mode)
-(global-display-line-numbers-mode)
+;; (global-display-line-numbers-mode)
 
 ;; Simple C mode
 ;; (require 'simpc-mode)
@@ -42,11 +42,8 @@
   (c-set-offset 'brace-list-open '0))
 (add-hook 'c-mode-hook 'my-c-mode-hook)
 
-;; evil mode
-(evil-mode 1)
-
 ;; display-line-numbers mode
-(setq display-line-numbers-type 'relative)
+;; (setq display-line-numbers-type 'relative)
 
 ;; ido mode
 (ido-mode 1)
